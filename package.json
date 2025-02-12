@@ -19,9 +19,12 @@
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@apollo/server": "^4.11.3",
     "@paralleldrive/cuid2": "^2.2.2",
     "dotenv": "^16.4.7",
+    "drizzle-graphql": "^0.8.5",
     "drizzle-orm": "^0.39.3",
+    "graphql": "^16.10.0",
     "pg": "^8.13.2"
   }
 }
