@@ -2,7 +2,6 @@ import { buildSchema } from 'drizzle-graphql'
 import { startStandaloneServer } from '@apollo/server/standalone'
 import { db } from '../db'
 import { ApolloServer } from '@apollo/server'
-// import cors from 'cors'
 
 const { schema } = buildSchema(db)
 
@@ -13,7 +12,7 @@ async function startServer() {
     context: async ({ req, res }) => {
       res?.setHeader(
         'Access-Control-Allow-Origin',
-        'https://clarke-ui-matheusf.netlify.app'
+        'https://echovolt-ui-matheusf.netlify.app'
       )
       res?.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
       res?.setHeader(
